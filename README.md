@@ -7,7 +7,7 @@
 
 ## 📃Introdução
 
-neste projeto fizemos uma aplicação java completa para uma empresa que aluga chalés, onde o usuarío consegue fazer os cadastros e inserir no banco de dados.
+Neste projeto fizemos uma **aplicação java completa** para uma empresa que aluga chalés, onde o usuarío consegue fazer os cadastros e inserir no banco de dados.
 
 ## 🔎 Referências para realização do trabalho
 
