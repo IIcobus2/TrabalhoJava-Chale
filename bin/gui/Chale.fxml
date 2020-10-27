@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ChaleController">
+	<children>
+		<Label text="Registro De Cliente">
+			<font>
+				<Font name="System Bold" size="14.0" />
+			</font>
+			<padding>
+				<Insets left="5.0" top="5.0" />
+			</padding>
+		</Label>
+		<ToolBar prefHeight="40.0" prefWidth="200.0">
+			<items>
+				<Button fx:id="btNovo" mnemonicParsing="false" onAction="#onBtNovoAction" text="Novo" />
+			</items>
+		</ToolBar>
+		<TableView fx:id="tableViewChale" prefHeight="200.0" prefWidth="200.0">
+			<columns>
+				<TableColumn fx:id="tableColumnId" prefWidth="75.0" text="Id" />
+				<TableColumn fx:id="tableColumnLoc" prefWidth="75.0" text="Localização" />
+            <TableColumn fx:id="tableColumnCapacidade" prefWidth="78.0" text="Capacidade" />
+            <TableColumn fx:id="tableColumnValorAlta" prefWidth="108.0" text="Valor em alta" />
+            <TableColumn fx:id="tableColumnValorBaixa" prefWidth="110.0" text="Valor em baixa" />
+            <TableColumn fx:id="tableColumnEDIT" prefWidth="64.0" />
+            <TableColumn fx:id="tableColumnREMOVE" prefWidth="70.0" />
+			</columns>
+		</TableView>
+	</children>
+</VBox>

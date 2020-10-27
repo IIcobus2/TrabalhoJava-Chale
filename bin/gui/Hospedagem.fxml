@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.HospedagemController">
+	<children>
+		<Label text="Registro De Hospedagem">
+			<font>
+				<Font name="System Bold" size="14.0" />
+			</font>
+			<padding>
+				<Insets left="5.0" top="5.0" />
+			</padding>
+		</Label>
+		<ToolBar prefHeight="40.0" prefWidth="200.0">
+			<items>
+				<Button fx:id="btNovo" mnemonicParsing="false" onAction="#onBtNovoAction" text="Novo" />
+			</items>
+		</ToolBar>
+		<TableView fx:id="tableViewHospedagem" prefHeight="200.0" prefWidth="200.0">
+			<columns>
+				<TableColumn fx:id="tableColumnId" prefWidth="75.0" text="Id" />
+				<TableColumn fx:id="tableColumnChale" prefWidth="75.0" text="Chale" />
+            <TableColumn fx:id="tableColumnCliente" prefWidth="78.0" text="Cliente" />
+            <TableColumn fx:id="tableColumnEstado" prefWidth="108.0" text="Estado" />
+            <TableColumn fx:id="tableColumnDataInicio" prefWidth="110.0" text="DataIncio" />
+            <TableColumn fx:id="tableColumnDataFim" prefWidth="75.0" text="DataFim" />
+            <TableColumn fx:id="tableColumnQtdPessoa" prefWidth="75.0" text="QtdPessoas" />
+            <TableColumn fx:id="tableColumnDesconto" prefWidth="75.0" text="Desconto" />
+            <TableColumn fx:id="tableColumnValorFinal" prefWidth="75.0" text="ValorFinal" />
+            <TableColumn fx:id="tableColumnEDIT" prefWidth="64.0" />
+            <TableColumn fx:id="tableColumnREMOVE" prefWidth="70.0" />
+			</columns>
+		</TableView>
+	</children>
+</VBox>
